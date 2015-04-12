@@ -14,17 +14,29 @@
 
             <input id="food" name="food" type="text" placeholder="овощной салат" class="font_large"/>
             <input id="weight" name="weight" type="text" placeholder="100" class="font_large"/> грамм
+            <input id="bread_unit" name="bread_unit" type="text" placeholder="100" class="font_large"/> хлебных единиц
+            <input id="date_time" name="date_time" type="datetime-local" placeholder="100" class="font_large"/> хлебных единиц
             <button id="add_food" type="submit" class="button font_large">Добавить</button>
 
         </form>
     </div>
     <div class="entries font_large">
         <table>
+            <tr>
+                <th> </th>
+                <th>Что</th>
+                <th> грамм </th>
+                <th> ХЕ </th>
+                <th> дата </th>
+
+            </tr>
         {% for entry in entries %}
+
             <tr>
                 <td>{{ entry['id']}}</td>
                 <td>{{ entry['name']}}</td>
                 <td>{{ entry['weight']}}</td>
+                <td>{{ entry['bread_unit']}}</td>
                 <td>{{ entry['date_time']}}</td>
             </tr>
         {% endfor%}

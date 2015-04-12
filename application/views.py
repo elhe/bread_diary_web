@@ -23,7 +23,9 @@ def index():
 def add_food_entry():
     if request.method == 'POST':
         data = dict(name=request.form.get('food'),
-                    width=request.form.get('weight'))
+                    weight=int(request.form.get('weight')),
+                    date_time=request.form.get('date_time'),
+                    bread_unit=int(request.form.get('bread_unit')),)
 
         response = utils.send_json_request('post', DIARY_ADD_URL, data)
         if response.status_code != 200:
