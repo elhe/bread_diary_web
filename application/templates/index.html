@@ -18,6 +18,18 @@
 
         </form>
     </div>
+    <div class="entries font_large">
+        <table>
+        {% for entry in entries %}
+            <tr>
+                <td>{{ entry['id']}}</td>
+                <td>{{ entry['name']}}</td>
+                <td>{{ entry['weight']}}</td>
+                <td>{{ entry['date_time']}}</td>
+            </tr>
+        {% endfor%}
+        </table>
+    </div>
 </div>
 
 </body>

@@ -1,6 +1,6 @@
 .font_large{
       color: #5D5A5A;
-      font-size: 1.3em;
+      font-size: 1.1em;
 }
 
 #content {
@@ -9,28 +9,28 @@
 
 
 #add_food_form {
-    position:absolute;
+
     top: 10%;
     left: 15%;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
     border:0.1em solid #DADE63;
-    border-radius: 1.5em;
+    border-radius: 0.6em;
 }
 
 #food {
     width: 20em;
-    height: 2em;
-    border-radius: 0.5em;
+    height: 1.3em;
+    border-radius: 0.3em;
     margin: 0.3em;
 }
 
 #weight {
     width: 4em;
-    height: 2em;
-    border-radius: 0.5em;
+    height: 1.3em;
+    border-radius: 0.3em;
 }
 
 .button {
@@ -45,10 +45,23 @@
   user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   background-color: #C1E787;
 }
 
 .button:hover {
   background-color:  #E7A163;
+}
+
+
+.entries{
+    margin: 1em;
+    padding: 1em;
+}
+
+tr {
+}
+td {
+padding: 0.5em;
+border-bottom:0.1em solid #DADE63;
 }
