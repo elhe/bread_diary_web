@@ -1,0 +1,23 @@
+<!doctype html>
+<head>
+    <title>Хлебный дневник</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+<div id="content" class="font_large">
+    {% if message%}
+        {{ message }}
+    {%endif %}
+
+    <div id="add_food_form">
+        <form name="food_entry" action="/add_food_entry" method="POST">
+
+            <input id="food" name="food" type="text" placeholder="овощной салат" class="font_large"/>
+            <input id="weight" name="weight" type="text" placeholder="100" class="font_large"/> грамм
+            <button id="add_food" type="submit" class="button font_large">Добавить</button>
+
+        </form>
+    </div>
+</div>
+
+</body>

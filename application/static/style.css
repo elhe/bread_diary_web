@@ -1,0 +1,54 @@
+.font_large{
+      color: #5D5A5A;
+      font-size: 1.3em;
+}
+
+#content {
+
+}
+
+
+#add_food_form {
+    position:absolute;
+    top: 10%;
+    left: 15%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    border:0.1em solid #DADE63;
+    border-radius: 1.5em;
+}
+
+#food {
+    width: 20em;
+    height: 2em;
+    border-radius: 0.5em;
+    margin: 0.3em;
+}
+
+#weight {
+    width: 4em;
+    height: 2em;
+    border-radius: 0.5em;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0.5em;
+  background-color: #C1E787;
+}
+
+.button:hover {
+  background-color:  #E7A163;
+}
